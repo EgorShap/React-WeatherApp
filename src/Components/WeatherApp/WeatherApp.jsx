@@ -12,7 +12,7 @@ import snow_icon from "../Assets/snow.png";
 import temp_icon from "../Assets/temp.png";
 
 const WeatherApp = () => {
-  let api_key = "7bace1fb08d99ccac366b122d52d8773";
+  let api_key = process.env.REACT_APP_API_KEY;
 
   const [wicon, setWicon] = useState(cloud_icon);
 
